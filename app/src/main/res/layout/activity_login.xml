@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".activity.guest.LoginActivity">
+
+    <!-- Page Wrapper -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Logo -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/beequiz_logo" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_regular"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/beequiz"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_regular"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Form Input Wrapper -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical">
+
+            <!-- NIM Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_regular"
+                android:text="NIM"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!-- NIM Input -->
+            <EditText
+                android:id="@+id/input_nim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_8dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/font_regular"
+                android:hint="ex: 2602070401"
+                android:includeFontPadding="false"
+                android:inputType="number"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp" />
+
+        </LinearLayout>
+
+        <!-- Form Input Wrapper -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical">
+
+            <!-- Password Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_regular"
+                android:text="@string/password"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!-- Password Input -->
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_8dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/font_regular"
+                android:hint="@string/password"
+                android:includeFontPadding="false"
+                android:inputType="textPassword"
+
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="8dp" />
+
+        </LinearLayout>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="@color/orange"
+            android:fontFamily="@font/font_regular"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="8dp"
+            android:text="@string/login"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Or Text -->
+        <TextView
+            android:id="@+id/text_or"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/font_regular"
+            android:gravity="center"
+            android:text="@string/or"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Fingerprint Button -->
+        <ImageButton
+            android:id="@+id/button_biometric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_fingerprint_64" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

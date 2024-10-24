@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.user.CreateQuizFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue">
+
+        <!-- Wrapper -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:orientation="vertical">
+
+            <!-- Create Quiz Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_regular"
+                android:includeFontPadding="false"
+                android:text="@string/create_quiz"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <!-- Quiz Title Wrapper -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_regular"
+                    android:text="@string/quiz_title"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/input_quiz_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_8dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/font_regular"
+                    android:hint="@string/fill_with_quiz_title"
+                    android:includeFontPadding="false"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="8dp" />
+
+            </LinearLayout>
+
+            <!-- Questions Wrapper -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical">
+
+                <!-- Questions Title -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_regular"
+                    android:text="@string/questions"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <!-- No Question Text -->
+                <TextView
+                    android:id="@+id/text_recycler_view_questions_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_question"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+                <!-- Recycler View for Questions -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!-- Line Separator -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white" />
+
+            <!-- Form Question -->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/form_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <!-- Question Input -->
+                <EditText
+                    android:id="@+id/input_question_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/light_gray"
+                    android:fontFamily="@font/font_regular"
+                    android:gravity="top"
+                    android:hint="@string/insert_question_here"
+                    android:includeFontPadding="false"
+                    android:minHeight="150dp"
+                    android:padding="10dp" />
+
+                <!-- Answer Wrapper -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/check_box_option_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9"
+                            android:button="@drawable/custom_checkbox" />
+
+                        <EditText
+                            android:id="@+id/input_option_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_8dp"
+                            android:backgroundTint="@color/light_gray"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/font_regular"
+                            android:hint="@string/option_one"
+                            android:includeFontPadding="false"
+                            android:padding="10dp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/check_box_option_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9"
+                            android:button="@drawable/custom_checkbox" />
+
+                        <EditText
+                            android:id="@+id/input_option_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_8dp"
+                            android:backgroundTint="@color/light_gray"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/font_regular"
+                            android:hint="@string/option_two"
+                            android:includeFontPadding="false"
+                            android:padding="10dp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/check_box_option_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9"
+                            android:button="@drawable/custom_checkbox" />
+
+                        <EditText
+                            android:id="@+id/input_option_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_8dp"
+                            android:backgroundTint="@color/light_gray"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/font_regular"
+                            android:hint="@string/option_three"
+                            android:includeFontPadding="false"
+                            android:padding="10dp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/check_box_option_four"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="9"
+                            android:button="@drawable/custom_checkbox" />
+
+                        <EditText
+                            android:id="@+id/input_option_four"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rounded_8dp"
+                            android:backgroundTint="@color/light_gray"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/font_regular"
+                            android:hint="@string/option_four"
+                            android:includeFontPadding="false"
+                            android:padding="10dp"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_done"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/light_blue"
+                    android:fontFamily="@font/font_regular"
+                    android:textSize="12sp"
+                    android:includeFontPadding="false"
+                    android:text="@string/done" />
+
+            </LinearLayout>
+
+            <!-- Button Wrapper -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="110dp">
+
+                <!-- Add Question Button -->
+                <Button
+                    android:id="@+id/button_add_question"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="4"
+                    android:backgroundTint="@color/orange"
+                    android:fontFamily="@font/font_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/add_question"
+                    android:textStyle="bold" />
+
+                <!-- Save Question Button -->
+                <Button
+                    android:id="@+id/button_save_quiz"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/orange"
+                    android:fontFamily="@font/font_regular"
+                    android:includeFontPadding="false"
+                    android:text="@string/save"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

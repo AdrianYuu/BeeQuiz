@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">BeeQuiz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <string name="beequiz" translatable="false">BeeQuiz</string>
+    <string name="nim" translatable="false">NIM</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="my_quiz">My Quiz</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="history">History</string>
+    <string name="hello">Hello,</string>
+    <string name="enter_quiz_code">Enter Quiz Code</string>
+    <string name="join">Join</string>
+    <string name="join_our_quizzes">Join Our Quizzes</string>
+    <string name="there_is_no_quiz">There is no quiz!</string>
+    <string name="search_quiz">Search Quiz</string>
+    <string name="enter_quiz_title">Enter Quiz Title</string>
+    <string name="qr_scanner">QR Scanner</string>
+    <string name="close">Close</string>
+    <string name="create_new_quiz">Create New Quiz</string>
+    <string name="fill_with_quiz_title">Fill With Quiz Title</string>
+    <string name="quiz_title">Quiz Title</string>
+    <string name="questions">Questions</string>
+    <string name="insert_question_here">Insert Question Here</string>
+    <string name="option_one">Option 1</string>
+    <string name="option_two">Option 2</string>
+    <string name="option_three">Option 3</string>
+    <string name="option_four">Option 4</string>
+    <string name="done">Done</string>
+    <string name="add_question">Add Question</string>
+    <string name="save">Save</string>
+    <string name="my_history">My History</string>
+    <string name="enter_month">Month</string>
+    <string name="enter_year">Year</string>
+    <string name="filter">Filter</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="congratulations">Congratulations You Got</string>
+    <string name="are_you_sure">Are you sure want to finalize?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="no_player">There is no player yet!</string>
+    <string name="no_question">There is no question yet!</string>
+
+
+    <string name="bn_number_nim">BN Number / NIM</string>
+    <string name="save_quiz">Save Quiz</string>
+    <string name="input_quiz_title">Input Quiz Title</string>
+    <string name="create_quiz">Create Quiz</string>
+    <string name="button_leaderboard_back" translatable="false">button_leaderboard_back</string>
+</resources>
